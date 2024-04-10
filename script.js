@@ -23,7 +23,11 @@ btn.addEventListener("click",()=>{
     console.log(fname);
     console.log(sname);
     url = `https://love-calculator.p.rapidapi.com/getPercentage?sname=${sname}&fname=${fname}`;
-    a();
+    if(sname==""||fname=="") {
+        alert("Fill the input field");
+        return;
+    }
+    else a();
 })
 function showRes(){
     score.innerHTML=`Love percentage = ${res}<br> ${data}`;
