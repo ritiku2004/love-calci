@@ -1,0 +1,211 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.863);
+    position: sticky;
+    top: 0%;
+    height: 10vh;
+    width: 100vw;
+    margin-bottom: 40px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+}
+
+#box {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#inp {
+    padding: 50px;
+    border-radius: 20px;
+    background-color: rgba(255, 0, 251, 0.777);
+    border: 1px solid pink;
+    box-shadow: 0 0 15px rgb(8, 0, 232);
+
+}
+
+#btn {
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 700;
+    background-color: rgb(119, 0, 255);
+    border: 1px solid blue;
+    border-radius: 20PX;
+    box-shadow: 0 0 8px blue;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+
+#btn:hover {
+    background-color: rgb(250, 250, 250);
+    color: rgb(255, 0, 234);
+}
+
+.lbl {
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+.inp {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    border: 4px solid blue;
+    background-color: rgb(229, 240, 169);
+    border-radius: 15px;
+    font: 20px bold;
+    font-weight: 800;
+    color: rgb(0, 20, 82);
+    font-family: sans-serif;
+}
+
+.inp:hover {
+    border: 4px solid rgba(255, 0, 208, 0.881);
+}
+footer{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    background-color: black;
+    color: pink;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+}
+span{
+    margin: 5px;
+    font-size: 12px;
+    position: absolute;
+    right: 0%;
+    cursor: pointer;
+}
+span:hover{
+    color:aqua;
+}
+.score_container{
+    position: fixed;
+    left: 37%;
+    top: 40%;
+    z-index: -1;
+    opacity: 0;
+}
+.card{
+    width: 400px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 0, 195);
+    background-color: rgb(255, 0, 187);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(0, 255, 119);
+    font-weight: 550;
+}
+#btn-close{
+    appearance: none;
+    width: 80px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: rgb(0, 255, 132);
+    color: rgb(25, 0, 255);
+    border-radius: 10px;
+    margin: 15px 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+#btn-close:hover{
+    background-color: rgb(0, 0, 180);
+    color: rgb(255, 0, 234);
+    box-shadow: 0 0 5px rgb(255, 0, 208);
+}
+@media(max-width:500px) {
+    body {
+        background-image: url("bg2.jpg");
+    
+    }
+    header {
+        margin-bottom: 40px;
+        background-color: rgba(255, 255, 255, 0.973);
+    }
+    .logo {
+        height: 70px;
+    }
+
+    #box {
+        height: 85vh;
+    }
+    #inp {
+        margin: 0px;
+        padding: 25px 40px;
+        border-radius: 20px;
+        border: 8px solid transparent;
+        background-color: rgba(255, 0, 251, 0.777);
+    }
+    .lbl {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .inp {
+        padding-left: 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-right: 10px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        border: 3px solid blue;
+        font: 18px bold;
+        font-weight: 700;
+    }
+    .inp:hover {
+        border: 3px solid rgba(255, 0, 208, 0.881);
+    }
+    .score_container{
+        left: 20px;
+        top: 40%;
+    }
+    .card{
+        width: 350px;
+        font-size: 22px;
+    }
+}

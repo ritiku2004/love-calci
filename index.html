@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo" class="logo">
+    </header>
+    <main>
+        <div id="box">
+            <div id="inp">
+                <label class="lbl" for="fname" >Your name </label>
+                <div class="con"><input class="inp" id="fname" type="text" placeholder="Krishna"></div>
+                <label class="lbl" for="sname" >Your partner name</label>
+                <div class="con"><input class="inp" id="sname" type="text" placeholder="Radha"></div>
+                <button id="btn">Calculate</button>
+            </div>
+        </div>
+        <div class="score_container">
+            <div class="card">
+                <p class="score"> </p>
+                <button id="btn-close">Close</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Made with &hearts; by Ritik</p>
+        <span id ="term">Terms & Conditions</span>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
